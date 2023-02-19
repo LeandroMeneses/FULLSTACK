@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+    <link rel="stylesheet" href="/css/style-padrao.css">
+
     <title>Home</title>
   </head>
+
+
+
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><i class="bi bi-list-stars"></i></li>
-          <li><i class="bi bi-pin-map-fill"></i></li>
-          <li>Brasília - DF</li>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul-menu">
+          <a href="login.html"><li><i class="bi bi-person-circle"></i></li></a>
+          <li id="imagem-localizacao">
+            <i class="bi bi-pin-map-fill"></i>
+            <p class="nome-localizacao">Brasília - DF</p>
+          </li>
           <li><i class="bi bi-file-earmark-image-fill"></i></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <span>
-        <h1>NOME DA EMPRESA</h1>
-        <h2>Olá, seja bem-vindo!</h2>
-        <h3>Vamos fazer seu pedido</h3>
-      </span>
+      <section id="mensagens-inicio">
+        <h1 id="nome-empresa">NOME DA EMPRESA</h1>
+        <h2 class="mensagem">Olá, seja bem-vindo!</h2>
+        <h3 class="mensagem">Vamos fazer seu pedido</h3>
+      </section>
 
       <section>
         <i class="bi bi-search"></i>
@@ -78,12 +85,44 @@
       </section>
 
 
-      <footer>
-        <ul>
-          <li><a href=""></a><i class="bi bi-house-door-fill"></i> <p> Home</p></li>
-          <li><a href=""></a><i class="bi bi-emoji-smile"></i></i> <p> Perfil</p></li>
-          <li><a href=""></a><i class="bi bi-receipt"></i> <p> Cupom</p></li>
-          <li><a href=""></a><i class="bi bi-stickies"></i> <p> Pedidos</p></li>
+      <footer id="footer" class="footer">
+        <ul class="footer-card">
+
+          <a href="home.html">
+            <li class="footer-item">
+              <i class="bi bi-house-door-fill"></i>
+              <p class="footer-nome-item">HOME</p>
+            </li>
+          </a>
+
+          <a href="cadastro_usuario.html">
+            <li class="footer-item">
+              <i class="bi bi-emoji-smile"></i>
+              <p class="footer-nome-item">CADASTRO DE USUÁRIO</p>
+            </li>
+          </a>
+
+          <a href="cadastro_produto.html">
+            <li class="footer-item">
+              <i class="bi bi-upc-scan"></i>
+              <p class="footer-nome-item">CADASTRO DE PROTUDO</p>
+            </li>
+          </a>
+
+          <a href="carrinho.html">
+            <li class="footer-item">
+              <i class="bi bi-cart"></i>
+              <p class="footer-nome-item">CARRINHO</p>
+            </li>
+          </a>
+
+          <a href="produto.html">
+            <li class="footer-item">
+              <i class="bi bi-stickies"></i>
+              <p class="footer-nome-item">PRODUTO</p>
+            </li>
+          </a>
+
         </ul>
         
       </footer>
