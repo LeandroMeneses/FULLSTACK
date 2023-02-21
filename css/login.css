@@ -195,14 +195,10 @@ i.bi-stickies{
     margin: auto;
     margin-top: 2rem;
     width: 50%;
-    background-color: orange;
+    background-color: var(--cor-da-empresa);
     border: black 3px solid;
     border-radius: 2rem;
-    z-index: index;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    z-index: 9999;
 }
 
 /* USANDO MEDIA QUERIES PARA TRANSFORMAR NOSSA PAGE ACESSÍVEL A TELA MENORES */

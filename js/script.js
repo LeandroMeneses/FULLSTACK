@@ -9,11 +9,17 @@ btnAdd.addEventListener("click", function(){
     }else{
         // alert("Login realizado com sucesso")
 
-        document.querySelector("#mensagem-ok").insertAdjacentHTML
-            "afterend",
+        document.querySelector("#mensagem-ok").insertAdjacentHTML(
+            "beforeend",
             `<div class="card-teste">
                 <span>LOGIN EFETUADO COM SUCESSO!!!</span>
-            </div>`
+            </div>`);
+
+            let mensagem =document.querySelector('.card-teste');
+
+            setTimeout(() => {
+                mensagem.style.display = "none";
+            }, 900);
 
     }
 
