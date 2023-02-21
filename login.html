@@ -25,6 +25,9 @@
     </header>
 
 
+    <section id="mensagem-ok" class="mensagem-ok"></section>
+
+
     <section><h1 id="nome-empresa">NOME DA EMPRESA</h1></section>
 
     <section id="secao-login">
@@ -33,14 +36,15 @@
 
         <div class="login-e-senha">
             <label for="" class="login">USUÁRIO</label>
-            <input class="addlogin" type="text">        
-            <label for="" class="senha">SENHA</label>
-            <input class="addlogin" type="text">
+            <input id="meuInput" class="addlogin" type="text">   
+
+            <label for="" class="login">SENHA</label>
+            <input id="meuInput" class="addlogin" type="password">
         </div>
     </section>
 
-    <section class="button-do-login">
-      <div id="realizar-login">REALIZAR LOGIN</div>
+    <section>
+      <button id="addBotao" class="botao-do-login" >REALIZAR LOGIN</button>
     </section>
     
 
@@ -86,6 +90,6 @@
       
     </footer>
 
-</main>
+<script src="./js/script.js"></script>
 </body>
 </html>
