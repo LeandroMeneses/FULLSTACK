@@ -6,45 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <title>Home</title>
+    <link rel="stylesheet" href="/css/login.css">
+
+    <title>Login</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><i class="bi bi-list-stars"></i></li>
-          <li><i class="bi bi-pin-map-fill"></i></li>
-          <li>Brasília - DF</li>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul-menu">
+          <a href="login.html"><li><i class="bi bi-person-circle"></i></li></a>
+          <li id="imagem-localizacao">
+            <i class="bi bi-pin-map-fill"></i>
+            <p class="nome-localizacao">Brasília - DF</p>
+          </li>
           <li><i class="bi bi-file-earmark-image-fill"></i></li>
         </ul>
       </nav>
     </header>
 
-    <section>
-        <h1>NOME DA EMPRESA</h1>
-        <img src="https://www.buenasdicas.com/wp-content/uploads/2020/01/comidas-tipicas-eua-macncheese.jpg" alt="imagem do produto">
 
-        <div>
-            <label for="">LOGIN</label>
-            <input type="text">        
-            <label for="">SENHA</label>
-            <input type="text">
+    <section><h1 id="nome-empresa">NOME DA EMPRESA</h1></section>
 
-            <button>REALIZAR LOGIN</button>
+    <section id="secao-login">
+        
+        <img class="img-food" src="https://img.myloview.com.br/adesivos/logotipo-de-comida-com-sorriso-rotulo-para-empresa-de-alimentos-logotipo-de-supermercado-ilustracao-vetorial-com-boca-sorridente-700-151110279.jpg" alt="imagem do produto">
+
+        <div class="login-e-senha">
+            <label for="" class="login">USUÁRIO</label>
+            <input class="addlogin" type="text">        
+            <label for="" class="senha">SENHA</label>
+            <input class="addlogin" type="text">
         </div>
     </section>
 
-
-<footer>
-    <ul>
-      <li><a href=""></a><i class="bi bi-house-door-fill"></i> <p> Home</p></li>
-      <li><a href=""></a><i class="bi bi-emoji-smile"></i></i> <p> Perfil</p></li>
-      <li><a href=""></a><i class="bi bi-receipt"></i> <p> Cupom</p></li>
-      <li><a href=""></a><i class="bi bi-stickies"></i> <p> Pedidos</p></li>
-    </ul>
+    <section class="button-do-login">
+      <div id="realizar-login">REALIZAR LOGIN</div>
+    </section>
     
-  </footer>
 
+    <footer id="footer" class="footer">
+      <ul class="footer-card">
+
+        <a href="home.html">
+          <li class="footer-item">
+            <i class="bi bi-house-door-fill"></i>
+            <p class="footer-nome-item">HOME</p>
+          </li>
+        </a>
+
+        <a href="cadastro_usuario.html">
+          <li class="footer-item">
+            <i class="bi bi-emoji-smile"></i>
+            <p class="footer-nome-item">CADASTRO DE USUÁRIO</p>
+          </li>
+        </a>
+
+        <a href="cadastro_produto.html">
+          <li class="footer-item">
+            <i class="bi bi-upc-scan"></i>
+            <p class="footer-nome-item">CADASTRO DE PROTUDO</p>
+          </li>
+        </a>
+
+        <a href="carrinho.html">
+          <li class="footer-item">
+            <i class="bi bi-cart"></i>
+            <p class="footer-nome-item">CARRINHO</p>
+          </li>
+        </a>
+
+        <a href="produto.html">
+          <li class="footer-item">
+            <i class="bi bi-stickies"></i>
+            <p class="footer-nome-item">PRODUTO</p>
+          </li>
+        </a>
+
+      </ul>
+      
+    </footer>
 
 </main>
 </body>

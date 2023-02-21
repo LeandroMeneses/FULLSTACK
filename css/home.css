@@ -20,6 +20,9 @@ body{
 .cabecalho{
     width: 100%;
     background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-la-est%C3%A1-en-parte-hacia-tacos-191566359.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 .menu .ul-menu{
@@ -320,3 +323,78 @@ i.bi-stickies{
     color: gray;
 }
 
+
+/* USANDO MEDIA QUERIES PARA TRANSFORMAR NOSSA PAGE ACESSÍVEL A TELA MENORES */
+
+@media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    header{
+        display: flex;
+    }
+    
+    i.bi-pin-map-fill, .nome-localizacao, i.bi-file-earmark-image-fill{
+        display: none;
+    }
+
+    i.bi-search{
+        position: absolute;
+        margin-right: 3rem;
+        padding-left: 2rem;
+
+    }
+
+    #categoria-ul{
+        flex-wrap: wrap;
+    }
+
+    #cards-produtos{
+        flex-wrap: wrap;
+
+    }
+
+    div.card-produto{
+        width: 100%;
+    }
+
+    #ver-mais{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-right: 3rem;
+        margin-bottom: 2rem;
+        padding: 15px;
+        width: 25%;
+    }
+    
+    .cliquevermais{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    a.vermais{
+        color: var(--cor-da-empresa);
+        text-decoration: none;
+        margin: .8rem 2rem;
+    }
+    
+    a.vermais:hover{
+        box-shadow: 2px 2px 35px 2px var(--cor-da-empresa);
+        text-align: left;
+        border-radius: 1.3rem;
+    }
+
+    span#frase-da-avaliacao{
+        display: none;
+    }
+
+    ul.footer-card{
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .footer-card a{
+        width: 100%;
+    }
+}
