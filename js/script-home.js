@@ -22,5 +22,6 @@ function mostrarEndereco(dados){
         nomeLocalizacao.innerHTML = "CEP NÃO ENCONTRADO";
     }else{
     // console.log(dados.localidade);
-    nomeLocalizacao.innerHTML = dados.localidade.uf;
+    nomeLocalizacao.innerHTML = dados.localidade;
+    console.log("aaaa");
 }}
